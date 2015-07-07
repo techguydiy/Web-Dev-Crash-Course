@@ -1,0 +1,13 @@
+.logo {
+	color:red;
+}
+
+.nav li a {
+	color:green;
+	text-decoration: none;
+}
+
+.nav li a:hover {
+	text-decoration: underline;
+}
+
