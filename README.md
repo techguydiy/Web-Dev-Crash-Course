@@ -2,6 +2,8 @@
 
 <p>Great first day, we covered a lot of the basics. Things will start picking up pace tomorrow. Please feel free to email me at jason@techguydiy.com if you have any questions between classes.</p>
 
+<p>You should receive an invite to slack. We will have offline converstations here for homework and code reviews. Please accept invite and setup your account when you have a moment.</p>
+
 <h2>Videos to watch</h2>
 <p><a target="_blank" href="https://www.youtube.com/watch?v=0SDwhjJwrh8">Crash Course Day 1</a></p>
 <p><a target="_blank" href="https://www.youtube.com/watch?v=EIejiZ1JhE4">Difference Between Classes & IDs</a></p>
