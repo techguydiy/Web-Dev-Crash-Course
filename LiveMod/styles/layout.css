@@ -1,0 +1,175 @@
+header {
+	width:100%;
+}
+
+.logo {
+	margin:0px auto;
+	display:block;
+}
+
+nav {
+	background:#00c0ff;
+	width:100%;
+	height:30px;
+}
+
+nav ul {
+	width:100%;
+	height:100%;
+	margin:0px;
+	padding:0px;
+}
+
+nav ul li {
+	display: inline-block;
+	list-style-type: none;
+	padding:5px 0px 0px 15px;
+}
+
+nav ul li a {
+	display:block;
+	color:#ffffff;
+	text-decoration: underline;
+	font-size:18px;
+}
+
+.list-wrapper {
+	width:100%;
+	height:100%;
+}
+
+.media-list, .admin-media-list {
+	margin:0px;
+	padding:0px;
+	width:100%;
+
+}
+
+.media-list li, .admin-media-list li {
+	width:100%;
+	margin:0px;
+	padding:0px;
+	list-style-type: none;
+}
+
+.media-list li img, .admin-media-list li img {
+	width:100%;
+	height: auto;
+}
+
+.media-list li p, .admin-media-list li p {
+	font-size:14px;
+	color:#000000;
+	padding:8px;
+}
+
+.media-list li button, .admin-media-list li button {
+	display:none;
+}
+
+
+.upload-info {
+	padding:5%;
+	width:90%;
+	background:#cccccc;
+}
+
+.upload-info p {
+	color:#999999;
+	font-size:18px;
+	text-align: center;
+}
+
+.upload-info p a {
+	color:#0176ac;
+
+}
+
+.upload-info img {
+	width:90%;
+	max-width:315px;
+	margin:0px auto;
+	display: block;
+}
+
+.uploadBtn {
+	width:100%;
+	margin:15px auto;
+	background: #00a048;
+	text-align: center;
+	padding:15px 0 15px 0;
+	display:block;
+	font-size:30px;
+	font-weight: bold;
+	color: #ffffff;
+	border-radius:20px;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border:0px;
+	text-transform: uppercase;
+}
+
+.overlay {
+	display: none;
+}
+
+@media (min-width: 650px){
+	.media-list li {
+		width:auto;
+		display: inline-block;
+	}
+	.admin-media-list li {
+		display:block;
+		width:auto;
+	}
+
+	.admin-media-list li a {
+		display: inline-block;
+		width:45%;
+		margin:0px 10px 0 0;
+		float:left;
+	}
+	.admin-media-list li a img {
+		width:100%;
+		display: inline-block;
+		
+	}
+
+	.admin-media-list li p {
+		display: inline-block;
+		width:50%;
+		float:left;
+	}
+
+	.admin-media-list li button {
+		display: inline-block;
+		color: #ffffff;
+		border-radius:20px;
+		-moz-border-radius:20px;
+		-webkit-border-radius:20px;
+		border:0px;
+		padding:8px 15px 8px 15px;
+		font-size:30px;
+		float:left;
+	}
+
+	.admin-media-list li button.approve {
+		background:#00a048;
+	}
+
+	.admin-media-list li button.decline {
+		background:#ff0000;
+	}
+
+	.logo {
+		margin:0px;
+	}
+}
+
+
+
+
+
+
+
+
