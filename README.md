@@ -6,6 +6,7 @@
 
 <h2>Videos to watch</h2>
 <p><a target="_blank" href="https://www.youtube.com/watch?v=0SDwhjJwrh8">Crash Course Day 1</a></p>
+<p><a target="_blank" href="https://www.youtube.com/watch?v=xHFkWjpAJsQ">Crash Course Day 2</a></p>
 <p><a target="_blank" href="https://www.youtube.com/watch?v=EIejiZ1JhE4">Difference Between Classes & IDs</a></p>
 <p><a target="_blank" href="https://www.youtube.com/watch?v=wEb6A0demT4">Definition Fun</a></p>
 <p><a target="_blank" href="https://www.youtube.com/watch?v=aveTV9gpZ1Q">Code Hello World</a></p>
