@@ -1,0 +1,16 @@
+{
+  "name": "LiveModServer",
+  "version": "1.0.0",
+  "description": "Web Dev Crash Course LiveMod Server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jason Sullivan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.1",
+    "http": "0.0.0",
+    "mongoose": "^4.0.6"
+  }
+}
