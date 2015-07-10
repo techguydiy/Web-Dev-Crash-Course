@@ -50,7 +50,7 @@ gulp.task('styles', function(){
 	var merged = merge();
 
 	Object.keys(paths.source.css.package).map(function(key){
-		merged.add(gulp.src(paths.source.css.package[key]))
+		merged.add(gulp.src(paths.source.css.package[key])
 			.pipe(plumber(function(error){
 				gutil.log(gutil.colors.red(error.message));
 				this.emit('end');
@@ -58,7 +58,7 @@ gulp.task('styles', function(){
 			.pipe(sass())
 			.pipe(concat(key + '.min.css'))
 			.pipe(size({
-				title: "CSS Before: " + key
+				title: 'CSS Before: ' + key
 			}))
 			.pipe(gulp.dest(paths.output.temp))
 			.pipe(autoprefixer('last 3 versions', 'ie 9', 'opera 12.1', 'io 6', 'io 7', 'android 4', 'firefox 27'))
@@ -68,8 +68,8 @@ gulp.task('styles', function(){
 			}))
 			.pipe(gulp.dest(paths.output.build))
 			.pipe(size({
-				title: "CSS After: " + key
-			}))
+				title: 'CSS After: ' + key
+			})))
 			.pipe(plumber.stop())
 			.on('error', gutil.log);
 	});
@@ -105,8 +105,9 @@ gulp.task('build', function(cb){
 
 });
 
-gulp.task('watch', function(){
-	watch(['sass/**/*.sass','js/**/*.js'], function(files, cb){
+gulp.task('watch', function (){
+	watch(['sass/**/*.sass','js/**/*.js'], function (files, cb){
+		console.log("here");
 		gulp.start('build', cb);
 	});
 })

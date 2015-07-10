@@ -6,4 +6,5 @@
 .test2 {
   width: 50%;
   height: 50%;
-  display: inline; }
+  display: inline;
+  margin: 0px; }
