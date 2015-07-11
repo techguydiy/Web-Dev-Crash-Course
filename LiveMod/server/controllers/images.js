@@ -19,20 +19,26 @@ exports.postImage = function(req, res){
 
 	var image = new imageModel();
 
-	image.imageTitle = req.body.imageTitle;
-	image.imageDesc = req.body.imageDesc;
-	image.imagePath = req.body.imagePath;
-	image.approved = 0;
-	image.uploadedDate = req.body.uploadDate;
+	if(done == true){
 
-	image.save(function(err){
-		if(err){
-			res.send(err);
-		}
+		console.log(req.files);
 
-		res.json({message: 'Image was saved to the database', data:image});
+		image.imageTitle = req.body.imageTitle;
+		image.imageDesc = req.body.imageDesc;
+		image.imagePath = "uploads/" + req.files.userPhoto.name;
+		image.imageExt = req.files.userPhoto.extension;
+		image.approved = 0;
+		image.uploadedDate = Date.now();
 
-	});
+		image.save(function(err){
+			if(err){
+				res.send(err);
+			}
+
+			res.json({message: 'Image was saved to the database', data:image});
+
+		});
+	}
 
 }
 
@@ -58,4 +64,14 @@ exports.getImages = function(req, res){
 		res.json(images);
 	});
 
+}
+
+exports.removeImage = function(req, res){
+	imageModel.remove({_id:req.params.image_id}, function(err){
+		if(err){
+			res.send(err);
+		}
+
+		res.json({message: 'Image has been removed'});
+	});
 }

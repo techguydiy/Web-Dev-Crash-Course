@@ -2,6 +2,7 @@ var mongoose = require('mongoose');
 
 var adminSchema = new mongoose.Schema({
 	eventName: String,
+	eventID: String,
 	eventDate: Date,
 	eventLogo: String,
 	eventImage: String,
