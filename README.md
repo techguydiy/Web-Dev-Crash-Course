@@ -8,6 +8,9 @@
 <p><a target="_blank" href="https://www.youtube.com/watch?v=0SDwhjJwrh8">Web Development - Day 1</a></p>
 <p><a target="_blank" href="https://www.youtube.com/watch?v=xHFkWjpAJsQ">Web Development - Day 2</a></p>
 <p><a target="_blank" href="https://www.youtube.com/watch?v=1OkZa6B7he8">Web Development - Day 3</a></p>
+<p><a target="_blank" href="https://www.youtube.com/watch?v=qP37ZDD7EGc">Web Development - Day 4</a></p>
+<p><a target="_blank" href="https://www.youtube.com/watch?v=mNK-EezSbIA">Web Development - Day 5</a></p>
+
 
 <h2>Videos to watch</h2>
 <p><a target="_blank" href="https://www.youtube.com/watch?v=EIejiZ1JhE4">Difference Between Classes & IDs</a></p>
