@@ -28,21 +28,23 @@
     	<main>
                 <ul id="admin-media-list" class="admin-media-list">
                     <li>
-                        <a href=""><img src="images/skull-picture.jpg" /></a>
+                        <div>
+                            <a href=""><img src="images/skull-picture.jpg" /><div class="decision-overlay"></div></a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis eros gravida, hendrerit mi et, congue nisi. Sed ut ornare augue. Donec congue orci ex, ac hendrerit felis tincidunt id. Fusce sit amet ante nisi. Ut id accumsan mi. Aliquam erat volutpat.</p>
+                            <button class="approve">Approve</button>
+                            <button class="decline">Decline</button>
+                        </div>
+                        <div style="clear:both"></div>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/tiger-picture.jpg" /><div class="decision-overlay"></div></a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis eros gravida, hendrerit mi et, congue nisi. Sed ut ornare augue. Donec congue orci ex, ac hendrerit felis tincidunt id. Fusce sit amet ante nisi. Ut id accumsan mi. Aliquam erat volutpat.</p>
                         <button class="approve">Approve</button>
                         <button class="decline">Decline</button>
                         <div style="clear:both"></div>
                     </li>
                     <li>
-                        <a href=""><img src="images/tiger-picture.jpg" /></a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis eros gravida, hendrerit mi et, congue nisi. Sed ut ornare augue. Donec congue orci ex, ac hendrerit felis tincidunt id. Fusce sit amet ante nisi. Ut id accumsan mi. Aliquam erat volutpat.</p>
-                        <button class="approve">Approve</button>
-                        <button class="decline">Decline</button>
-                        <div style="clear:both"></div>
-                    </li>
-                    <li>
-                        <a href=""><img src="images/cat-picture.jpg" /></a>
+                        <a href=""><img src="images/cat-picture.jpg" /><div class="decision-overlay"></div></a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis eros gravida, hendrerit mi et, congue nisi. Sed ut ornare augue. Donec congue orci ex, ac hendrerit felis tincidunt id. Fusce sit amet ante nisi. Ut id accumsan mi. Aliquam erat volutpat.</p>
                         <button class="approve">Approve</button>
                         <button class="decline">Decline</button>
@@ -58,6 +60,28 @@
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+        <script>
+            $(function(){
+                $('#admin-media-list li img').on('swiperight', swiperighthandler);
+                $('#admin-media-list li img').on('swipeleft', swipelefthandler);
+
+                function swiperighthandler( event ){
+                    console.log('swiped right');
+                    $(event.target).parent().find('.decision-overlay').toggleClass('rightswipe');
+                    $(event.target).parent().find('.decision-overlay').removeClass('leftswipe');
+                }
+
+                function swipelefthandler( event ){
+                    console.log('swiped left');
+                    $(event.target).parent().find('.decision-overlay').toggleClass('leftswipe');
+                    $(event.target).parent().find('.decision-overlay').removeClass('rightswipe');
+                }
+
+
+            });
+        </script>
 
     </body>
 </html>
